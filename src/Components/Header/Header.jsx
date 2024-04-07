@@ -76,7 +76,17 @@ export const Header = () => {
                     <ul>
                         <div>
                             <div className={style.logoCircle}></div>
-                            <img src={menuButton} className={style.menuButton} onClick={handleMenu} />
+                            <motion.img src={menuButton} className={style.menuButton} onClick={handleMenu} 
+                             initial={{ opacity: 0, scale: 1.5 }}
+                             animate={{ opacity: 1, scale: 1 }}
+                             transition={{ duration: 3, delay: 1, type: 'spring', stiffness: 300 }}
+                             exit={{
+                                 opacity: 0, x: 500,
+                                 transition: { duration: 0.3, }
+                             }}
+                            
+                            
+                            />
                         </div>
                     </ul>
                 </div>
@@ -136,7 +146,15 @@ export const Header = () => {
                                     <p onClick={() => scrollToRef(contactRef)} className={`${style.a} ${style.aMenu}`}>Contact</p>
                                 </motion.li>
                             </ul>
-                            <img src={closed} className={style.closed} onClick={handleMenu} />
+                            <motion.img src={closed} className={style.closed} onClick={handleMenu} 
+                               initial={{ opacity: 0, scale: 1.5 }}
+                               animate={{ opacity: 1, scale: 1 }}
+                               transition={{ duration: 3, delay: 1, type: 'spring', stiffness: 300 }}
+                               exit={{
+                                   opacity: 0, x: 500,
+                                   transition: { duration: 1, delay: 0.2, }
+                               }}
+                            />
                         </motion.div>
                     )
                 }
