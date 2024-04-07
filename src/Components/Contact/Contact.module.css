@@ -1,0 +1,411 @@
+/* ============== CONTAINER 2 ============== */
+.container2 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E252B;
+    position: relative;
+    z-index: 9;
+}
+
+.card2 {
+    width: 80%;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+
+.selo {
+    width: 150px;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999999999999999;
+}
+
+.form2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 0;
+    /* max-width: 180px; */
+}
+
+.formAll {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formComment {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%, -50%); */
+    position: relative;
+}
+
+
+
+
+.infoCopy {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    padding: 4px;
+    border-radius: 4px;
+    color: #1E252B;
+    transition: 0.3s ease-in-out;
+}
+
+.copiado {
+    width: 32px;
+}
+
+.formEmail:hover {
+    .infoCopy {
+        opacity: 1;
+        bottom: -40px;
+        transition: 0.3s ease-in-out;
+
+    }
+}
+
+
+.copy {
+    width: 32px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.formEmail {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    z-index: 9;
+}
+
+.formFrom {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 9;
+}
+
+
+.formTo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.input2 {
+    font-family: inherit;
+    width: 120%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.input2::placeholder {
+    color: transparent;
+}
+
+.input2:placeholder-shown~.label2 {
+    font-size: 17px;
+    cursor: text;
+    top: 10px;
+}
+
+.label2 {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.3s ease-out;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.label22 {
+    color: #aa3910;
+}
+
+.input2:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #1E252B, #aa3910);
+    border-image-slice: 1;
+}
+
+
+.input2:focus~.label2 {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #aa3910;
+}
+
+/* === EMAIL === */
+.input2:active {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #1E252B, #aa3910);
+    border-image-slice: 1;
+}
+
+.input2:focus~.label2 {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #aa3910;
+}
+
+
+/* reset input */
+.input2:required,
+.input2:invalid {
+    box-shadow: none;
+}
+
+.comment::placeholder {
+    color: #9b9b9b;
+}
+
+
+.comment {
+    border-width: 3px;
+    background-image: -webkit-linear-gradient(left, white 10px, transparent 10px),
+        -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #9b9b9b 30px, #9b9b9b 31px, white 31px);
+    background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #9b9b9b 30px, #9b9b9b 31px, white 31px);
+    background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #9b9b9b 30px, #9b9b9b 31px, white 31px);
+    background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #9b9b9b 30px, #9b9b9b 31px, white 31px);
+    background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #9b9b9b 30px, #9b9b9b 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 31px;
+}
+
+.comment:focus {
+    border-width: 3px;
+    background-image: -webkit-linear-gradient(left, #fff 10px, transparent 10px), -webkit-linear-gradient(right, #fff 10px, transparent 10px), -webkit-linear-gradient(#fff 30px, #1E252B 30px, #aa3910 31px, #fff 31px);
+    background-image: -moz-linear-gradient(left, #fff 10px, transparent 10px), -moz-linear-gradient(right, #fff 10px, transparent 10px), -moz-linear-gradient(#fff 30px, #1E252B 30px, #aa3910 31px, #fff 31px);
+    background-image: -ms-linear-gradient(left, #fff 10px, transparent 10px), -ms-linear-gradient(right, #fff 10px, transparent 10px), -ms-linear-gradient(#fff 30px, #1E252B 30px, #aa3910 31px, #fff 31px);
+    background-image: -o-linear-gradient(left, #fff 10px, transparent 10px), -o-linear-gradient(right, #fff 10px, transparent 10px), -o-linear-gradient(#fff 30px, #1E252B 30px, #aa3910 31px, #fff 31px);
+    background-image: linear-gradient(left, #fff 10px, transparent 10px), linear-gradient(right, #fff 10px, transparent 10px), linear-gradient(#fff 30px, #1E252B 30px, #aa3910 31px, #fff 31px);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 31px;
+}
+
+
+/* ================== */
+.btnDiv {
+    padding: 20px 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 2px solid #fff;
+    transform: skew(-21deg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+svg {
+    width: 22px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover svg {
+    transform: rotate(45deg);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* ==== */
+.heart {
+    width: 64px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+}
+
+.game {
+    width: 82px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 1100px) {
+    .card2 {
+        height: 80%;
+    }
+
+    .formEmail {
+        top: 40%;
+    }
+
+    .formTo {
+        top: 30%;
+    }
+
+    .game,
+    .heart {
+        width: 64px;
+    }
+
+    .formFrom {
+        width: auto;
+        left: 0;
+        top: 20%;
+    }
+
+    .formEmail {
+        width: auto;
+        top: 70%;
+    }
+
+    .formTo {
+        width: auto;
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .selo {
+        width: 102px;
+    }
+
+    .game,
+    .heart {
+        width: 42px;
+    }
+
+    .card2 {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+
+    .input2 {
+        width: 100%;
+    }
+
+    .selo {
+        width: 64px;
+    }
+
+    .formFrom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .formEmail {
+        width: 100%;
+        top: 75%;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .formTo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        top: 55%;
+        left: 50%;
+    }
+
+    .input2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}

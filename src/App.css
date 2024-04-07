@@ -1,0 +1,141 @@
+html,
+body {
+  /* background-image: linear-gradient(to bottom, #0f172a, #121a2e, #141d32, #172137, #1a243b); */
+  background-color: black;
+  box-sizing: border-box;
+  font-family: 'Protest Strike', 'Poppins';
+}
+
+.App {
+  z-index: 999999999;
+}
+
+.color {
+  color: #aa3910;
+}
+
+.color3 {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #1E252B;
+}
+
+.colorC {
+  cursor: pointer;
+  font-style: italic;
+  color: #3b5a77;
+  z-index: 999;
+}
+
+.ttt {
+  background-color: aliceblue;
+}
+
+/* === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 99999999999999;
+  text-shadow: #000000 4px 4px 4px;
+}
+
+.fff {
+  background-color: #fff;
+}
+.fff2{
+  color: #fff;
+}
+.themeIMG {
+  width: 50px;
+  height: 50px;
+}
+
+.links ul {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #aa3910;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.a:hover {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+.letter {
+  width: 84px;
+}
+
+/* === */
+.visible {
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.hidden {
+  top: -70px;
+  transition: 0.3s ease-in-out;
+}
+
+/* === */
+.a {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.a:focus,
+.a:hover {
+  color: #fff;
+}
+
+.a:focus:after,
+.a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
