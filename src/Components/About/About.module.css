@@ -24,7 +24,9 @@
     min-width: 50%;
     height: 100vh;
 }
-
+.a {
+    text-decoration: none;
+}
 .Limg {
     position: absolute;
     top: 50%;

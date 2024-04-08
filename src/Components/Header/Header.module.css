@@ -95,7 +95,7 @@
 
 .a:focus,
 .a:hover {
-    color: #fff;
+    color: gray;
 }
 
 .a:focus:after,
@@ -111,7 +111,7 @@
     left: 50%;
     position: absolute;
     width: 0%;
-    height: 2px;
+    height: 5px;
     background-color: #fff;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
@@ -167,46 +167,3 @@
 
 }
 
-/* @media screen and (max-width: 790px) {
-    .links {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .header {
-        display: flex;
-        align-items: center;
-    }
-
-    .menuDiv {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .menuButton {
-        position: absolute;
-        right: 10px;
-        display: flex;
-    }
-
-    .a {
-        display: none;
-    }
-
-    .aMenu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .font {
-        position: absolute;
-        display: flex;
-        left: 10px;
-    }
-} */

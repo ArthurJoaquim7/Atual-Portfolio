@@ -1,24 +1,24 @@
 import style from './Portfolio.module.css'
 import cssC from '../Img/cssC.png'
-import cssS from '../Img/cssS.png'
+// import cssS from '../Img/cssS.png'
 import htmlC from '../Img/htmlC.png'
-import htmlS from '../Img/htmlS.png'
+// import htmlS from '../Img/htmlS.png'
 import jsC from '../Img/jsC.png'
-import jsS from '../Img/jsS.png'
+// import jsS from '../Img/jsS.png'
 import reactC from '../Img/reactC.png'
-import reactS from '../Img/reactS.png'
+// import reactS from '../Img/reactS.png'
 import nodeC from '../Img/nodeC.png'
-import nodeS from '../Img/nodeS.png'
+// import nodeS from '../Img/nodeS.png'
 import mysqlC from '../Img/mysqlC.png'
-import mysqlS from '../Img/mysqlS.png'
+// import mysqlS from '../Img/mysqlS.png'
 import discDONE from '../Img/discDONE.png'
 import hboDONE from '../Img/hboDONE.png'
 import ecoDONE from '../Img/ecoDONE.png'
 import webDONE from '../Img/webDONE.png'
 import motionC from '../Img/motionC.png'
 import express from '../Img/express.png'
-import motionS from '../Img/motionS.png'
-import cloudTop from '../Img/cloudTop.svg'
+// import motionS from '../Img/motionS.png'
+// import cloudTop from '../Img/cloudTop.svg'
 // import java from '../Img/java.png'
 // import python from '../Img/python.png'
 // import angular from '../Img/angular.png'
@@ -30,15 +30,9 @@ import clickR from '../Img/clickR.png'
 import gHub from '../Img/gHub.png'
 // import testGif from '../Img/testGif.gif'
 
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export const Portfolio = () => {
-  // const ref = useRef()
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["start start", "end start"]
-  // })
 
   const viewBottom = {
     initial: {
@@ -52,9 +46,6 @@ export const Portfolio = () => {
       transition: { duration: 0.3, ease: 'easeInOut', delay: 0.3 }
     }
   }
-
-  // const sliceL = useTransform(scrollYProgress, [0, 1], ["100%", "0%"])
-  // const sliceR = useTransform(scrollYProgress, [0, 1], ["-0%", "0%"])
 
   return (
     <AnimatePresence>
@@ -88,14 +79,16 @@ export const Portfolio = () => {
             }}
             transition={{ delay: 0.2, ease: 'easeInOut', type: 'spring', stiffness: 300 }}
           >PROJETOS</motion.div>
-        </div> 
+        </div>
         {/* ----CONTENT---- */}
         <div className={style.content} >
           {/* DISCORD */}
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
-                <img src={discDONE} className={style.test} />
+                <a href="https://discord-navy.vercel.app/" target='blank'>
+                  <img src={discDONE} className={style.test} />
+                </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
                 <div className={`${style.projectDesc} ${style.projectDescMiddle}`}>
@@ -109,7 +102,7 @@ export const Portfolio = () => {
                       }}
                     >DISCORD</motion.h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus ipsum id nisi veniam, in, quia odio consectetur quo eos recusandae</p>
+                  <p>Um dos primeiros desafios em REACT, criei a interface do Discord apenas olhando para o original, consegui aplicar as PROPS e ter mais facilidade de controle dos componentes</p>
                 </div>
                 <div className={`${style.divIcon} ${style.divIconMiddle}`}>
                   <div className={style.goIconDiv}>
@@ -122,7 +115,7 @@ export const Portfolio = () => {
                         once: true,
                       }}
                     />
-                    <a href="https://discord-navy.vercel.app/" target='blank'>
+                    <a href="https://github.com/ArthurKhalifa/Discord" target='blank'>
                       <img src={gHub} className={style.goIcon} />
                     </a>
                   </div>
@@ -139,7 +132,9 @@ export const Portfolio = () => {
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
-                <img src={ecoDONE} className={style.test} />
+                <a href="##" target='blank'>
+                  <img src={ecoDONE} className={style.test} />
+                </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardRight}`}>
                 <div className={`${style.projectDesc} ${style.projectDescRight}`}>
@@ -153,11 +148,11 @@ export const Portfolio = () => {
                       }}
                     >E-COMMERCE</motion.h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus ipsum id nisi veniam, in, quia odio consectetur quo eos recusandae</p>
+                  <p>Usando FAKE STORE API, criei esse projeto que foi e está sendo muito importante para mim, consegui por em prática muita teoria e aprender durante o processo</p>
                 </div>
                 <div className={`${style.divIcon} ${style.divIconRight}`}>
                   <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="" target='blank'><img src={gHub} className={style.goIcon} /></a>
+                    <a href="https://github.com/ArthurKhalifa/E-commerce" target='blank'><img src={gHub} className={style.goIcon} /></a>
                     <motion.img src={clickR} className={`${style.goIcon} ${style.click}`}
                       initial={{ scale: 0.7 }}
                       whileInView={{
@@ -178,7 +173,9 @@ export const Portfolio = () => {
                 </div>
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
-                <img src={ecoDONE} className={style.test} />
+                <a href="##" target='blank'>
+                  <img src={ecoDONE} className={style.test} />
+                </a>
               </div>
             </div>
           </div>
@@ -186,7 +183,9 @@ export const Portfolio = () => {
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
-                <img src={hboDONE} className={style.test} />
+                <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target='blank'>
+                  <img src={hboDONE} className={style.test} />
+                </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
                 <div className={`${style.projectDesc} ${style.projectDescMiddle}`}>
@@ -200,7 +199,7 @@ export const Portfolio = () => {
                       }}
                     >HBO MAX FILMES</motion.h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus ipsum id nisi veniam, in, quia odio consectetur quo eos recusandae</p>
+                  <p>Um dos primeiros projetos durante o processo de aprendizado, onde eu adicionei(manualmente) cada card de filme, claro que usando API é bem mais simples, mas graças a esse trabalho “repetitivo” eu pude me acostumar com o HTML e CSS</p>
                 </div>
                 <div className={`${style.divIcon} ${style.divIconMiddle}`}>
                   <div className={style.goIconDiv}>
@@ -213,7 +212,7 @@ export const Portfolio = () => {
                         once: true,
                       }}
                     />
-                    <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target='blank'><img src={gHub} className={style.goIcon} /></a>
+                    <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" target='blank'><img src={gHub} className={style.goIcon} /></a>
                   </div>
                   <div className={style.toolsDiv}>
                     <img src={jsC} className={style.tools} />
@@ -228,7 +227,9 @@ export const Portfolio = () => {
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
-                <img src={webDONE} className={style.test} />
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'>
+                  <img src={webDONE} className={style.test} />
+                </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardRight}`}>
                 <div className={`${style.projectDesc} ${style.projectDescRight}`}>
@@ -240,13 +241,13 @@ export const Portfolio = () => {
                       viewport={{
                         once: true,
                       }}
-                    >CADASTRAMENTO</motion.h1>
+                    >CRUD</motion.h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus ipsum id nisi veniam, in, quia odio consectetur quo eos recusandae</p>
+                  <p>Um simples CRUD que adiciona, edita, e deleta os dados no banco de dados. Usando o NODE, esse é o primeiro de muitos projetos</p>
                 </div>
                 <div className={`${style.divIcon} ${style.divIconRight}`}>
                   <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="https://reactjs-cadastro.vercel.app/" target='blank'><img src={gHub} className={style.goIcon} /></a>
+                    <a href="https://github.com/ArthurKhalifa/Nodejs-Cadastro" target='blank'><img src={gHub} className={style.goIcon} /></a>
                     <motion.img src={clickR} className={`${style.goIcon} ${style.click}`}
                       initial={{ scale: 0.7 }}
                       whileInView={{
@@ -266,7 +267,7 @@ export const Portfolio = () => {
                 </div>
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
-                <img src={webDONE} className={style.test} />
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'><img src={webDONE} className={style.test} /></a>
               </div>
             </div>
           </div>

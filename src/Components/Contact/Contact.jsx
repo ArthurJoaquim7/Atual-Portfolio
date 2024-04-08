@@ -43,7 +43,7 @@ export const Contact = () => {
       setName('')
       setEmail('')
       setComment('')
-      Swal.fire("Aguarde o process... Mensagem enviada! :D");
+      Swal.fire("Mensagem enviada! :D");
     })
   }
 

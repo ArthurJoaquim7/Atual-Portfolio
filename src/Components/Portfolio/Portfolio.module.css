@@ -13,7 +13,7 @@
     background-position: bottom;
     z-index: 9999;
     scroll-behavior: smooth;
-     overflow: hidden;
+    overflow: hidden;
 }
 
 .content {
@@ -146,12 +146,15 @@
 }
 
 .slider {
-    padding: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 15px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    padding: 10px;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+    border-radius: 15px;
     gap: 50px;
-    white-space: nowrap;
 }
 
 
@@ -159,6 +162,7 @@
     width: 82px;
     border-radius: 15px;
     height: auto;
+    filter: drop-shadow(0px 2px 2px black);
 }
 
 /* ========= */
