@@ -2,7 +2,6 @@ import style from '../Parallax/Parallax.module.css'
 import waveTest from '../Img/waveTest.png'
 import codeF from '../Img/codeF.png'
 import vaca from '../Img/vaca.png'
-import emailZoom from '../img/emailZoom.png'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -23,7 +22,6 @@ export const Parallax = () => {
             </div>
             <img src={waveTest} className={style.waveBottom} />
             <div className={style.centered}>
-                <motion.img src={emailZoom} className={style.circle} style={{ scale }} />
             </div>
         </motion.div>
     );
