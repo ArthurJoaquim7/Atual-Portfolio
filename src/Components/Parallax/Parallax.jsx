@@ -2,6 +2,7 @@ import style from '../Parallax/Parallax.module.css'
 import waveTest from '../Img/waveTest.png'
 import codeF from '../Img/codeF.png'
 import vaca from '../Img/vaca.png'
+import emailZoom from '../Img/emailZoom.png'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -12,7 +13,6 @@ export const Parallax = () => {
         offset: ['start start', 'end start'],
     });
 
-    
     const scale = useTransform(scrollYProgress, [0, 1], [1, 6]);
 
     return (
@@ -23,6 +23,7 @@ export const Parallax = () => {
             </div>
             <img src={waveTest} className={style.waveBottom} />
             <div className={style.centered}>
+                <motion.img src={emailZoom} className={style.circle} style={{scale}} />
             </div>
         </motion.div>
     );
