@@ -13,8 +13,6 @@ import correr from '../Img/correr.png'
 
 import ArthurCurriculum from '../PtCV/ArthurCurriculum.pdf'
 
-
-
 import { easeInOut, motion, AnimatePresence } from 'framer-motion'
 
 const viewLeft = {
@@ -221,7 +219,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 50 }}
-                >Correr "by David Goggins"</motion.p>
+                >Stay Hard (by David Goggins)</motion.p>
               </div>
               <div className={style.flex}>
                 <img src={wasd} className={style.aboutIcons} />
@@ -231,7 +229,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.4, type: 'spring', stiffness: 50 }}
-                >CS2 para desestressar <span>"Ou não"</span></motion.p>
+                >CS2 para desestressar <span>(Ou não)</span></motion.p>
               </div>
               <div className={style.flex}>
                 <img src={eng} className={style.aboutIcons} />

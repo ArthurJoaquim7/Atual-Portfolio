@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import style from './Header.module.css';
-import logo2 from '../Img/logo2.png';
 import menuButton from '../Img/menuButton.png';
 import closed from '../Img/closed.png';
 import { Home } from '../Home/Home';
