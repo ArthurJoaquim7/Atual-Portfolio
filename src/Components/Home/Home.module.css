@@ -1,4 +1,3 @@
-
 .home {
     width: 100%;
     height: 300vh;
@@ -49,6 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     transition: 0.3s ease-in-out;
 }
@@ -56,6 +56,8 @@
 .h11 {
     font-size: 14rem;
     position: relative;
+    letter-spacing: 5px;
+    padding: 0 10px;
     text-shadow: #000000 8px 8px 8px;
     white-space: nowrap;
     overflow: hidden;
@@ -65,7 +67,7 @@
 .h22Bottom {
     font-size: 7rem;
     margin: 0;
-
+    letter-spacing: 5px;
 }
 
 
@@ -421,7 +423,8 @@
     .full {
         font-size: 1.5em;
     }
-    .home{
+
+    .home {
         height: 200vh;
     }
 
@@ -439,12 +442,32 @@
     .h22,
     .h22Bottom {
         font-size: 2.9em;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .full {
         font-size: 1.3em;
     }
 }
+
+@media screen and (max-width: 345px) {
+    .h11 {
+        font-size: 5.6em;
+    }
+    .h22,
+    .h22Bottom {
+        font-size: 2.6em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .h11 {
+        font-size: 5.2em;
+    }
+    .h22,
+    .h22Bottom {
+        font-size: 2.3em;
+    }
+}
+
 
 /* =======  HEIGHT ======= */

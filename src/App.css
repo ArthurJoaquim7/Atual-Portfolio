@@ -3,7 +3,7 @@ body {
   /* background-image: linear-gradient(to bottom, #0f172a, #121a2e, #141d32, #172137, #1a243b); */
   background-color: black;
   box-sizing: border-box;
-  font-family: 'Protest Strike', 'Poppins';
+  font-family: 'Impact', 'Poppins';
 }
 
 .App {
@@ -51,9 +51,11 @@ body {
 .fff {
   background-color: #fff;
 }
-.fff2{
+
+.fff2 {
   color: #fff;
 }
+
 .themeIMG {
   width: 50px;
   height: 50px;

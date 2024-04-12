@@ -79,7 +79,9 @@
     display: flex;
     gap: 10px;
 }
-
+.reduce{
+    font-size: 40px;
+}
 .iIcons {
     cursor: pointer;
     padding-top: 10px;
@@ -112,7 +114,8 @@
     justify-content: center;
     flex-direction: column;
     top: 0%;
-    padding: 20px 150px;
+    padding: 0px 150px;
+    padding-bottom: 20px;
     z-index: 9;
     background-image: linear-gradient(to bottom, #354256, #2e3b4b, #293440, #242d36, #1f262c);
     overflow: hidden;

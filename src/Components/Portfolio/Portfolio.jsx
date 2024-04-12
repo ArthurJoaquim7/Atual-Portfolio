@@ -160,7 +160,7 @@ export const Portfolio = () => {
                 </div>
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
-                <a href="##" target='blank'>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183911890136227841/" target='blank'>
                   <img src={ecoDONE} className={style.test} />
                 </a>
               </div>
