@@ -15,6 +15,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@react-pdf/renderer": "^3.4.2",
+    "@studio-freight/lenis": "^1.0.42",
     "firebase-tools": "^11.13.0",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
