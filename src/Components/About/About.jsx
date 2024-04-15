@@ -54,7 +54,7 @@ export const About = () => {
                 once: true,
               }}
               transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
-            ><span className={style.reduce}>Olá, <span className={style.color}>s</span>ou<br /></span> Arthur <span className={style.color}>Santos</span></motion.h1>
+            ><span className={style.reduce}>Olá, <span className={style.color}>s</span>ou<br /></span> Arthur <span className={style.color}>Joaquim</span></motion.h1>
             <motion.p className={style.p2}
               initial={{ opacity: 0, y: 75 }}
               whileInView={{ opacity: 1, y: 0 }}
