@@ -16,8 +16,21 @@ import seta from '../Img/seta.png'
 import click from '../Img/click.png'
 import clickR from '../Img/clickR.png'
 import gHub from '../Img/gHub.png'
-
-import { motion, AnimatePresence } from 'framer-motion'
+// import top from '../Img/top.png'
+// import mountain from '../Img/mountain.png'
+// import forest from '../Img/forest.png'
+// import mNoBg from '../Img/mNoBg.png'
+// import moon from '../Img/moon.png'
+// import mForest from '../Img/mForest.png'
+// import mid from '../Img/mid.png'
+import luaf from '../Img/luaf.png'
+// import lua from '../Img/lua.png'
+// import back from '../Img/back.png'
+// import stickL from '../Img/stickL.png'
+// import bottom from '../Img/bottom.png'
+// import whole from '../Img/whole.jpg'
+import { useRef } from 'react'
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 
 export const Portfolio = () => {
 
@@ -33,11 +46,27 @@ export const Portfolio = () => {
       transition: { duration: 0.3, ease: 'easeInOut', delay: 0.3 }
     }
   }
+  const ref = useRef()
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  })
 
+  const Ttitle = useTransform(scrollYProgress, [0, 1], ["0%", "450%"])
+  // const Ttop = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
+  // const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"])
+  // const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"])
+  const x = useTransform(scrollYProgress, [0, 1], ["-100%", "145%"])
+  // const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "40%"])
+  // const y4 = useTransform(scrollYProgress, [0, 1], ["0%", "-7%"])
+  const L = useTransform(scrollYProgress, [0, 1], ["0%", "40%"])
+  const R = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"])
+  const scaleIn = useTransform(scrollYProgress, [0, 1], [1, 3]);
   return (
     <AnimatePresence>
       <div className={style.portfolio} id='portfolio'>
-        <div className={style.carrocel}>
+        <div className={style.padding}></div>
+        {/* <div className={style.carrocel}>
           <div className={style.slider}>
             <img src={reactC} className={style.imgSlide} />
             <img src={nodeC} className={style.imgSlide} />
@@ -48,9 +77,26 @@ export const Portfolio = () => {
             <img src={mysqlC} className={style.imgSlide} />
             <img src={motionC} className={style.imgSlide} />
           </div>
-        </div>
-        <div className={style.sliceDiv}>
-          <motion.div className={style.h22}
+        </div> */}
+        <motion.div className={style.parallax} ref={ref} style={{ scale: scaleIn }}>
+          <motion.div className={style.title} style={{ y: Ttitle, x: x }}>PROJETOS</motion.div>
+          {/* <motion.div className={style.lua} style={{ x: L }}></motion.div> */}
+          <motion.img src={luaf} className={style.lua} style={{ x: L }} />
+          <motion.div className={style.stickL} style={{ x: R }}></motion.div>
+          {/* <motion.img src={moon} className={style.mountain} />
+            <motion.img src={mNoBg} className={style.mountain} />
+            <motion.img src={forest} className={style.mountain2} />
+            <motion.img src={mForest} className={style.mountain}  /> */}
+          {/* <motion.div className={style.padding2} style={{ y: y2 }}></motion.div> */}
+        </motion.div>
+
+
+
+
+
+
+
+        {/* <motion.div className={style.h22}
             initial={{ opacity: 0, x: -300, y: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{
@@ -65,8 +111,7 @@ export const Portfolio = () => {
               once: true,
             }}
             transition={{ delay: 0.2, ease: 'easeInOut', type: 'spring', stiffness: 300 }}
-          >PROJETOS</motion.div>
-        </div>
+          >PROJETOS</motion.div> */}
         {/* ----CONTENT---- */}
         <div className={style.content} >
           {/* DISCORD */}

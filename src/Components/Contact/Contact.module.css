@@ -31,6 +31,15 @@
     z-index: 9999999999999999;
 }
 
+.lin{
+    width: 64px;
+}
+.linDiv{
+    position: absolute;
+    z-index: 9999999999;
+    top: 20px;
+    right: 20px;
+}
 .form2 {
     position: relative;
     display: flex;
@@ -347,6 +356,9 @@ svg {
 }
 
 @media screen and (max-width: 800px) {
+    .lin{
+        width: 42px;
+    }
     .selo {
         width: 102px;
     }

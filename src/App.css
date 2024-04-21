@@ -27,7 +27,9 @@ body {
   color: #3b5a77;
   z-index: 999;
 }
-
+.parent{
+  color: #3b5a77;
+}
 .ttt {
   background-color: aliceblue;
 }

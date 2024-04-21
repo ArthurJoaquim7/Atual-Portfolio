@@ -10,6 +10,8 @@ import calis from '../Img/calis.png'
 import ads from '../Img/ads.png'
 import wasd from '../Img/wasd.png'
 import correr from '../Img/correr.png'
+import topWave from '../Img/topWave.png'
+
 
 import ArthurCurriculum from '../PtCV/ArthurCurriculum.pdf'
 
@@ -44,6 +46,7 @@ export const About = () => {
   return (
     <AnimatePresence>
       <div className={style.about}>
+        <img src={topWave} className={style.topWave} />
         <div className={style.intro}>
           <motion.div className={style.Lintro}
           >
@@ -190,7 +193,7 @@ export const About = () => {
                 viewport={{
                   once: true,
                 }} transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
-              >No tempo livre gosto de...</motion.p>
+              >No tempo livre eu...</motion.p>
               <div className={style.flex}>
                 <img src={calis} className={style.aboutIcons} />
                 <motion.p
@@ -199,7 +202,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 50 }}
-                >Treinar Calistenia</motion.p>
+                >Treino Calistenia</motion.p>
               </div>
               <div className={style.flex}>
                 <img src={ball} className={style.aboutIcons} />
@@ -209,7 +212,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.2, type: 'spring', stiffness: 50 }}
-                >Jogar bola</motion.p>
+                >Jogo bola</motion.p>
               </div>
               <div className={style.flex}>
                 <img src={correr} className={style.aboutIcons} />
@@ -240,7 +243,7 @@ export const About = () => {
                     once: true,
                   }}
                   transition={{ duration: 0.3, delay: 0.5, type: 'spring', stiffness: 50 }}
-                >Lapidar meu inglês no DISCORD<span>(English Server)</span></motion.p>
+                >Speak english at DISCORD<span className='parent'>(English Server)</span></motion.p>
               </div>
             </motion.div>
           </div>
