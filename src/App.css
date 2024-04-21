@@ -3,7 +3,8 @@ body {
   /* background-image: linear-gradient(to bottom, #0f172a, #121a2e, #141d32, #172137, #1a243b); */
   background-color: black;
   box-sizing: border-box;
-  font-family: 'Impact', 'Poppins';
+  /* font-family: 'Impact', 'Poppins'; */
+  font-family: 'impact','poppins','Century';
 }
 
 .App {
