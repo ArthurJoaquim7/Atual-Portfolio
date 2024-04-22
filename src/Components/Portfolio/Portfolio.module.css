@@ -187,14 +187,6 @@
 }
 
 /* =====PARALLAX==== */
-.parallaxDiv {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
 
 .parallax {
     width: 100%;
@@ -227,8 +219,9 @@
 .lua {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     width: 50%;
+    z-index: 9999999;
     /* background-image: url(../Img/luaf.png);
     background-position: top;
     background-size: cover;
@@ -497,7 +490,6 @@
 @media screen and (max-width: 1010px) {
     .lua {
         bottom: 150px;
-
     }
 
     .test {
@@ -582,8 +574,17 @@
     }
 
 }
-
+@media screen and (max-width: 780px){
+    .lua {
+        top: initial;
+        bottom: 150px;
+    }
+} 
 @media screen and (max-width: 610px) {
+    .lua {
+        top: initial;
+        bottom: 150px;
+    }
 
     .test {
         width: 90vw;
