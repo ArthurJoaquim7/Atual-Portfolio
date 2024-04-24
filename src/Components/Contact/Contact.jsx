@@ -52,15 +52,15 @@ export const Contact = () => {
 
         <div className={style.container2}>
             <div className={style.card2}>
-                <img src={selo} className={style.selo} />
-                <a href="https://www.linkedin.com/in/arthurjoaquim7/" target='blank' className={style.linDiv}><motion.img src={lin} className={style.lin}
+                <img src={selo} className={style.selo} alt='selo'/>
+                <a href="https://www.linkedin.com/in/arthurjoaquim7/" aria-label='linkedin' target='blank' className={style.linDiv}><motion.img src={lin} className={style.lin}
                     initial={{}}
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: 'easeInOut' }}
                 />
                 </a>
-                <img src={heart2} className={style.heart} />
-                <motion.img src={oldGame} className={style.game}
+                <img src={heart2} className={style.heart} alt='selo'/>
+                <motion.img src={oldGame} className={style.game} alt='game'
                     initial={{ opacity: 0, y: -75, scale: 0.8 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
@@ -68,7 +68,7 @@ export const Contact = () => {
                 <form className={style.form2} onSubmit={sendEmail}>
                     <div className={style.formAll}>
                         <div className={style.formFrom}>
-                            <input type="name" name='name' placeholder='Name' className={style.input2}
+                            <input type="text" name='name' placeholder='Name' className={style.input2}
                                 value={name}
                                 onChange={(e) => { setName(e.target.value) }} />
                             <label htmlFor="name" className={style.label2}>De</label>
@@ -85,12 +85,12 @@ export const Contact = () => {
                                 onClick={handleCopy} />
                             <label htmlFor="name" className={`${style.label2} ${style.label22}`}>Para</label>
                             <div className={style.infoCopy}>
-                                <img src={copiar} className={style.copiado} />
+                                <img src={copiar} className={style.copiado} alt='copy'/>
                             </div>
                         </div>
                     </div>
                     <div className={style.formComment}>
-                        <textarea name="comment" cols="30" rows="10"
+                        <textarea type="text" name="comment" cols="30" rows="10"
                             value={comment}
                             onChange={(e) => { setComment(e.target.value) }}
                             className={`${style.input2} ${style.comment}`}

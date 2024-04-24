@@ -18,12 +18,12 @@ export const Parallax = () => {
     return (
         <motion.div className={style.container} ref={ref}>
             <div className={style.floating}>
-                <img src={vaca} className={style.vaca} />
-                <img src={codeF} className={style.vacaCode} />
+                <img src={vaca} className={style.vaca} alt='vaca'/>
+                <img src={codeF} className={style.vacaCode} alt='code'/>
             </div>
-            <img src={waveTest} className={style.waveBottom} />
+            <img src={waveTest} className={style.waveBottom} alt='waveTest'/>
             <div className={style.centered}>
-                <motion.img src={emailZoom} className={style.circle} style={{scale}} />
+                <motion.img src={emailZoom} className={style.circle} style={{scale}} alt='emailZoom'/>
             </div>
         </motion.div>
     );

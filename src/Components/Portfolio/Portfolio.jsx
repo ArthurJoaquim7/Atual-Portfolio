@@ -81,7 +81,7 @@ export const Portfolio = () => {
         <motion.div className={style.parallax} ref={ref} style={{ scale: scaleIn }}>
           <motion.div className={style.title} style={{ y: Ttitle, x: x }}>PROJETOS</motion.div>
           {/* <motion.div className={style.lua} style={{ x: L }}></motion.div> */}
-          <motion.img src={luaf} className={style.lua} style={{ x: L }} />
+          <motion.img src={luaf} className={style.lua} style={{ x: L }} alt='lua'/>
           <motion.div className={style.stickL} style={{ x: R }}></motion.div>
           {/* <motion.img src={moon} className={style.mountain} />
             <motion.img src={mNoBg} className={style.mountain} />
@@ -119,7 +119,7 @@ export const Portfolio = () => {
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
                 <a href="https://discord-navy.vercel.app/" target='blank'>
-                  <img src={discDONE} className={style.test} />
+                  <img src={discDONE} className={style.test} alt='discord'/>
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
@@ -138,7 +138,7 @@ export const Portfolio = () => {
                 </div>
                 <div className={`${style.divIcon} ${style.divIconMiddle}`}>
                   <div className={style.goIconDiv}>
-                    <motion.img src={click} className={`${style.goIcon} ${style.click}`}
+                    <motion.img src={click} className={`${style.goIcon} ${style.click}`} alt='click'
                       initial={{ scale: 0.7 }}
                       whileInView={{
                         scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
@@ -148,13 +148,13 @@ export const Portfolio = () => {
                       }}
                     />
                     <a href="https://github.com/ArthurKhalifa/Discord" target='blank'>
-                      <img src={gHub} className={style.goIcon} />
+                      <img src={gHub} className={style.goIcon} alt='github'/>
                     </a>
                   </div>
                   <div className={style.toolsDiv}>
-                    <img src={reactC} className={style.tools} />
-                    <img src={htmlC} className={style.tools} />
-                    <img src={cssC} className={style.tools} />
+                    <img src={reactC} className={style.tools} alt='tools' />
+                    <img src={htmlC} className={style.tools} alt='tools' />
+                    <img src={cssC} className={style.tools} alt='tools' />
                   </div>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export const Portfolio = () => {
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183911890136227841/" target='blank'>
-                  <img src={ecoDONE} className={style.test} />
+                  <img src={ecoDONE} className={style.test} alt='eco'/>
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardRight}`}>
@@ -184,8 +184,8 @@ export const Portfolio = () => {
                 </div>
                 <div className={`${style.divIcon} ${style.divIconRight}`}>
                   <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="https://github.com/ArthurKhalifa/E-commerce" target='blank'><img src={gHub} className={style.goIcon} /></a>
-                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`}
+                    <a href="https://github.com/ArthurKhalifa/E-commerce" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
+                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`} alt='click'
                       initial={{ scale: 0.7 }}
                       whileInView={{
                         scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
@@ -196,17 +196,17 @@ export const Portfolio = () => {
                     />
                   </div>
                   <div className={style.toolsDiv}>
-                    <img src={reactC} className={style.tools} />
-                    <img src={jsC} className={style.tools} />
-                    <img src={motionC} className={style.tools} />
-                    <img src={htmlC} className={style.tools} />
-                    <img src={cssC} className={style.tools} />
+                    <img src={reactC} className={style.tools} alt='tools' />
+                    <img src={jsC} className={style.tools} alt='tools' />
+                    <img src={motionC} className={style.tools} alt='tools' />
+                    <img src={htmlC} className={style.tools} alt='tools' />
+                    <img src={cssC} className={style.tools} alt='tools' />
                   </div>
                 </div>
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183911890136227841/" target='blank'>
-                  <img src={ecoDONE} className={style.test} />
+                  <img src={ecoDONE} className={style.test} alt='eco'/>
                 </a>
               </div>
             </div>
@@ -216,7 +216,7 @@ export const Portfolio = () => {
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
                 <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target='blank'>
-                  <img src={hboDONE} className={style.test} />
+                  <img src={hboDONE} className={style.test} alt='hbo'/>
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
@@ -235,7 +235,7 @@ export const Portfolio = () => {
                 </div>
                 <div className={`${style.divIcon} ${style.divIconMiddle}`}>
                   <div className={style.goIconDiv}>
-                    <motion.img src={click} className={`${style.goIcon} ${style.click}`}
+                    <motion.img src={click} className={`${style.goIcon} ${style.click}`} alt='click'
                       initial={{ scale: 0.7 }}
                       whileInView={{
                         scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
@@ -244,12 +244,12 @@ export const Portfolio = () => {
                         once: true,
                       }}
                     />
-                    <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" target='blank'><img src={gHub} className={style.goIcon} /></a>
+                    <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
                   </div>
                   <div className={style.toolsDiv}>
-                    <img src={jsC} className={style.tools} />
-                    <img src={htmlC} className={style.tools} />
-                    <img src={cssC} className={style.tools} />
+                    <img src={jsC} className={style.tools} alt='tools' />
+                    <img src={htmlC} className={style.tools} alt='tools' />
+                    <img src={cssC} className={style.tools} alt='tools' />
                   </div>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export const Portfolio = () => {
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'>
-                  <img src={webDONE} className={style.test} />
+                  <img src={webDONE} className={style.test} alt='web'/>
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardRight}`}>
@@ -279,8 +279,8 @@ export const Portfolio = () => {
                 </div>
                 <div className={`${style.divIcon} ${style.divIconRight}`}>
                   <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="https://github.com/ArthurKhalifa/Nodejs-Cadastro" target='blank'><img src={gHub} className={style.goIcon} /></a>
-                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`}
+                    <a href="https://github.com/ArthurKhalifa/Nodejs-Cadastro" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
+                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`} alt='click'
                       initial={{ scale: 0.7 }}
                       whileInView={{
                         scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
@@ -291,15 +291,15 @@ export const Portfolio = () => {
                     />
                   </div>
                   <div className={style.toolsDiv}>
-                    <img src={reactC} className={style.tools} />
-                    <img src={nodeC} className={style.tools} />
-                    <img src={mysqlC} className={style.tools} />
-                    <img src={express} className={style.tools} />
+                    <img src={reactC} className={style.tools} alt='tools' />
+                    <img src={nodeC} className={style.tools} alt='tools' />
+                    <img src={mysqlC} className={style.tools} alt='tools' />
+                    <img src={express} className={style.tools} alt='tools' />
                   </div>
                 </div>
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'><img src={webDONE} className={style.test} /></a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'><img src={webDONE} className={style.test} alt='web'/></a>
               </div>
             </div>
           </div>
@@ -312,14 +312,14 @@ export const Portfolio = () => {
                 once: true,
               }}
             >
-              <img src={seta} className={style.seta} />
+              <img src={seta} className={style.seta} alt='seta'/>
               Você pode ver todos os meus projetos no meu
               <span className='color'> GITHUB</span>
             </motion.p>
             <motion.a href="https://github.com/ArthurKhalifa?tab=repositories" target='blank'
               initial={{}}
               animate={{ scale: [1, 1.1, 1] }}
-              transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: 'easeInOut' }}><img src={seeMoreIcon} className={style.seeMoreImg} /></motion.a>
+              transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: 'easeInOut' }}><img src={seeMoreIcon} className={style.seeMoreImg} alt='seeMore'/></motion.a>
           </motion.div>
         </div>
         <div className={style.line}></div>

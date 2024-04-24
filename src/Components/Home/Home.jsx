@@ -68,15 +68,15 @@ export const Home = () => {
                 style={{ x: sliceL }}
                 exit={{ opacity: 0, y: 200, transition: { duration: 1, delay: 0.1 } }}
               >
-                <img src={fanL} className={style.fanL} />
+                <img src={fanL} className={style.fanL}  alt='fan'/>
                 <p className={style.full}>FUTURO FULLSTACK</p>
-                <img src={fanR} className={style.fanR} />
+                <img src={fanR} className={style.fanR}  alt='fan'/>
               </motion.div>
             )
           }
         </motion.div>
         {/* ========== */}
-        <img src={terra2} className={style.terra} />
+        <img src={terra2} className={style.terra} alt='terra'/>
       </div >
     </AnimatePresence>
 

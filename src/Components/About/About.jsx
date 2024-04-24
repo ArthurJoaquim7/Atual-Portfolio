@@ -46,7 +46,7 @@ export const About = () => {
   return (
     <AnimatePresence>
       <div className={style.about}>
-        <img src={topWave} className={style.topWave} />
+        <img src={topWave} className={style.topWave} alt='topWave'/>
         <div className={style.intro}>
           <motion.div className={style.Lintro}
           >
@@ -96,7 +96,7 @@ export const About = () => {
                 transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
               >Detalhes</motion.p>
               <div className={style.flex}>
-                <img src={time} className={style.aboutIcons} />
+                <img src={time} className={style.aboutIcons} alt='time'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -108,7 +108,7 @@ export const About = () => {
               </div>
               {/* ==== */}
               <div className={style.flex}>
-                <img src={location} className={style.aboutIcons} />
+                <img src={location} className={style.aboutIcons} alt='location'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -120,7 +120,7 @@ export const About = () => {
               </div>
               {/* ==== */}
               <div className={style.flex}>
-                <img src={email} className={style.aboutIcons} />
+                <img src={email} className={style.aboutIcons} alt='email'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -148,7 +148,7 @@ export const About = () => {
                 transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
               >Formações</motion.p>
               <div className={style.flex}>
-                <img src={log} className={style.aboutIcons} />
+                <img src={log} className={style.aboutIcons} alt='logistic'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -158,7 +158,7 @@ export const About = () => {
                   Logistica - Graduação(2022) UNIVISA</motion.p>
               </div>
               <div className={style.flex}>
-                <img src={ads} className={style.aboutIcons} />
+                <img src={ads} className={style.aboutIcons} alt='degree'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -169,7 +169,7 @@ export const About = () => {
                 {/* <img src={xp} className={style.aboutIcons} /> */}
               </div>
               <div className={style.flex}>
-                <img src={eng2} className={style.aboutIcons} />
+                <img src={eng2} className={style.aboutIcons} alt='en'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -195,7 +195,7 @@ export const About = () => {
                 }} transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
               >No tempo livre eu...</motion.p>
               <div className={style.flex}>
-                <img src={calis} className={style.aboutIcons} />
+                <img src={calis} className={style.aboutIcons} alt='contact'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -205,7 +205,7 @@ export const About = () => {
                 >Treino Calistenia</motion.p>
               </div>
               <div className={style.flex}>
-                <img src={ball} className={style.aboutIcons} />
+                <img src={ball} className={style.aboutIcons} alt='ball'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -215,7 +215,7 @@ export const About = () => {
                 >Jogo bola</motion.p>
               </div>
               <div className={style.flex}>
-                <img src={correr} className={style.aboutIcons} />
+                <img src={correr} className={style.aboutIcons} alt='run'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -225,7 +225,7 @@ export const About = () => {
                 >Stay Hard (by David Goggins)</motion.p>
               </div>
               <div className={style.flex}>
-                <img src={wasd} className={style.aboutIcons} />
+                <img src={wasd} className={style.aboutIcons} alt='cs2'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -235,7 +235,7 @@ export const About = () => {
                 >CS2 para desestressar <span>(Ou não)</span></motion.p>
               </div>
               <div className={style.flex}>
-                <img src={eng} className={style.aboutIcons} />
+                <img src={eng} className={style.aboutIcons} alt='eng'/>
                 <motion.p
                   initial={{ opacity: 0, x: 75 }}
                   whileInView={{ opacity: 1, x: 0 }}
