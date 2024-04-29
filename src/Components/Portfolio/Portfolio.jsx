@@ -63,17 +63,65 @@ export const Portfolio = () => {
         </div> */}
         <motion.div className={style.parallax} ref={ref} style={{ scale: scaleIn }}>
           <motion.div className={style.title} style={{ y: Ttitle, x: x }}>PROJETOS</motion.div>
-          <motion.img src={luaf} className={style.lua} style={{ x: L }} alt='lua'/>
+          <motion.img src={luaf} className={style.lua} style={{ x: L }} alt='lua' />
           <motion.div className={style.stickL} style={{ x: R }}></motion.div>
         </motion.div>
         {/* ----CONTENT---- */}
         <div className={style.content} >
+          {/* FULLSTACK CRUD */}
+          <div className={style.contentDiv}>
+            <div className={`${style.contentCard} ${style.positionRight}`}>
+              <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'>
+                  <img src={webDONE} className={style.test} alt='web' />
+                </a>
+              </div>
+              <div className={`${style.rightCard} ${style.rightCardRight}`}>
+                <div className={`${style.projectDesc} ${style.projectDescRight}`}>
+                  <div className={style.h1Div}>
+                    <span className={style.clone}>FULL STACK</span>
+                    <motion.h1
+                      initial={{ color: "#58595a" }}
+                      whileInView={{ color: ["#992d2d"], transition: { duration: 0.3, delay: 0.25 } }}
+                      viewport={{
+                        once: true,
+                      }}
+                    >CRUD</motion.h1>
+                  </div>
+                  <p>Um simples CRUD que adiciona, edita, e deleta os dados no banco de dados. Usando o NODE, esse é o primeiro de muitos projetos</p>
+                </div>
+                <div className={`${style.divIcon} ${style.divIconRight}`}>
+                  <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
+                    <a href="https://github.com/ArthurJoaquim7/Nodejs-Cadastro" target='blank'><img src={gHub} className={style.goIcon} alt='github' /></a>
+                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`} alt='click'
+                      initial={{ scale: 0.7 }}
+                      whileInView={{
+                        scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
+                      }}
+                      viewport={{
+                        once: true,
+                      }}
+                    />
+                  </div>
+                  <div className={style.toolsDiv}>
+                    <img src={reactC} className={style.tools} alt='tools' />
+                    <img src={nodeC} className={style.tools} alt='tools' />
+                    <img src={mysqlC} className={style.tools} alt='tools' />
+                    <img src={express} className={style.tools} alt='tools' />
+                  </div>
+                </div>
+              </div>
+              <div className={`${style.leftCard} ${style.leftCardRight}`}>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'><img src={webDONE} className={style.test} alt='web' /></a>
+              </div>
+            </div>
+          </div>
           {/* DISCORD */}
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
                 <a href="https://discord-navy.vercel.app/" target='blank'>
-                  <img src={discDONE} className={style.test} alt='discord'/>
+                  <img src={discDONE} className={style.test} alt='discord' />
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
@@ -101,8 +149,8 @@ export const Portfolio = () => {
                         once: true,
                       }}
                     />
-                    <a href="https://github.com/ArthurKhalifa/Discord" target='blank'>
-                      <img src={gHub} className={style.goIcon} alt='github'/>
+                    <a href="https://github.com/ArthurJoaquim7/Discord" target='blank'>
+                      <img src={gHub} className={style.goIcon} alt='github' />
                     </a>
                   </div>
                   <div className={style.toolsDiv}>
@@ -119,7 +167,7 @@ export const Portfolio = () => {
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183911890136227841/" target='blank'>
-                  <img src={ecoDONE} className={style.test} alt='eco'/>
+                  <img src={ecoDONE} className={style.test} alt='eco' />
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardRight}`}>
@@ -138,7 +186,7 @@ export const Portfolio = () => {
                 </div>
                 <div className={`${style.divIcon} ${style.divIconRight}`}>
                   <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="https://github.com/ArthurKhalifa/E-commerce" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
+                    <a href="https://github.com/ArthurJoaquim7/E-commerce" target='blank'><img src={gHub} className={style.goIcon} alt='github' /></a>
                     <motion.img src={clickR} className={`${style.goIcon} ${style.click}`} alt='click'
                       initial={{ scale: 0.7 }}
                       whileInView={{
@@ -160,7 +208,7 @@ export const Portfolio = () => {
               </div>
               <div className={`${style.leftCard} ${style.leftCardRight}`}>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7183911890136227841/" target='blank'>
-                  <img src={ecoDONE} className={style.test} alt='eco'/>
+                  <img src={ecoDONE} className={style.test} alt='eco' />
                 </a>
               </div>
             </div>
@@ -169,8 +217,8 @@ export const Portfolio = () => {
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionMiddle}`}>
               <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
-                <a href="https://arthurkhalifa.github.io/Catalogo-De-Filmes/" target='blank'>
-                  <img src={hboDONE} className={style.test} alt='hbo'/>
+                <a href="https://arthurjoaquim7.github.io/Catalogo-De-Filmes/" target='blank'>
+                  <img src={hboDONE} className={style.test} alt='hbo' />
                 </a>
               </div>
               <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
@@ -198,7 +246,7 @@ export const Portfolio = () => {
                         once: true,
                       }}
                     />
-                    <a href="https://github.com/ArthurKhalifa/Catalogo-De-Filmes" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
+                    <a href="https://github.com/ArthurJoaquim7/Catalogo-De-Filmes" target='blank'><img src={gHub} className={style.goIcon} alt='github' /></a>
                   </div>
                   <div className={style.toolsDiv}>
                     <img src={jsC} className={style.tools} alt='tools' />
@@ -206,54 +254,6 @@ export const Portfolio = () => {
                     <img src={cssC} className={style.tools} alt='tools' />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          {/* FULLSTACK CADASTRO */}
-          <div className={style.contentDiv}>
-            <div className={`${style.contentCard} ${style.positionRight}`}>
-              <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'>
-                  <img src={webDONE} className={style.test} alt='web'/>
-                </a>
-              </div>
-              <div className={`${style.rightCard} ${style.rightCardRight}`}>
-                <div className={`${style.projectDesc} ${style.projectDescRight}`}>
-                  <div className={style.h1Div}>
-                    <span className={style.clone}>FULL STACK</span>
-                    <motion.h1
-                      initial={{ color: "#58595a" }}
-                      whileInView={{ color: ["#992d2d"], transition: { duration: 0.3, delay: 0.25 } }}
-                      viewport={{
-                        once: true,
-                      }}
-                    >CRUD</motion.h1>
-                  </div>
-                  <p>Um simples CRUD que adiciona, edita, e deleta os dados no banco de dados. Usando o NODE, esse é o primeiro de muitos projetos</p>
-                </div>
-                <div className={`${style.divIcon} ${style.divIconRight}`}>
-                  <div className={`${style.goIconDiv} ${style.goIconDivRight}`}>
-                    <a href="https://github.com/ArthurKhalifa/Nodejs-Cadastro" target='blank'><img src={gHub} className={style.goIcon} alt='github'/></a>
-                    <motion.img src={clickR} className={`${style.goIcon} ${style.click}`} alt='click'
-                      initial={{ scale: 0.7 }}
-                      whileInView={{
-                        scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
-                      }}
-                      viewport={{
-                        once: true,
-                      }}
-                    />
-                  </div>
-                  <div className={style.toolsDiv}>
-                    <img src={reactC} className={style.tools} alt='tools' />
-                    <img src={nodeC} className={style.tools} alt='tools' />
-                    <img src={mysqlC} className={style.tools} alt='tools' />
-                    <img src={express} className={style.tools} alt='tools' />
-                  </div>
-                </div>
-              </div>
-              <div className={`${style.leftCard} ${style.leftCardRight}`}>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'><img src={webDONE} className={style.test} alt='web'/></a>
               </div>
             </div>
           </div>
@@ -266,14 +266,14 @@ export const Portfolio = () => {
                 once: true,
               }}
             >
-              <img src={seta} className={style.seta} alt='seta'/>
+              <img src={seta} className={style.seta} alt='seta' />
               Você pode ver todos os meus projetos no meu
               <span className='color'> GITHUB</span>
             </motion.p>
-            <motion.a href="https://github.com/ArthurKhalifa?tab=repositories" target='blank'
+            <motion.a href="https://github.com/ArthurJoaquim7?tab=repositories" target='blank'
               initial={{}}
               animate={{ scale: [1, 1.1, 1] }}
-              transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: 'easeInOut' }}><img src={seeMoreIcon} className={style.seeMoreImg} alt='seeMore'/></motion.a>
+              transition={{ repeatType: "loop", repeat: Infinity, duration: 2, ease: 'easeInOut' }}><img src={seeMoreIcon} className={style.seeMoreImg} alt='seeMore' /></motion.a>
           </motion.div>
         </div>
         <div className={style.line}></div>
