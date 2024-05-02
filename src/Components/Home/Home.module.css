@@ -7,7 +7,8 @@
     position: relative;
     color: #e2e8f0;
     z-index: 9;
-    background-image: linear-gradient(to bottom, #000000, #000000, #3b363a, #6e6d78, #9eabbc, #cdf0ff);    overflow: hidden;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #000000, #161315, #231f24, #2f2c35, #383a47, #42495a, #4c596d, #546980, #647e98, #7493b2, #84a9cc, #95bfe6);
 }
 
 .star2 {
