@@ -49,18 +49,6 @@ export const Portfolio = () => {
     <AnimatePresence>
       <div className={style.portfolio} id='portfolio'>
         <div className={style.padding}></div>
-        {/* <div className={style.carrocel}>
-          <div className={style.slider}>
-            <img src={reactC} className={style.imgSlide} />
-            <img src={nodeC} className={style.imgSlide} />
-            <img src={express} className={style.imgSlide} />
-            <img src={cssC} className={style.imgSlide} />
-            <img src={jsC} className={style.imgSlide} />
-            <img src={htmlC} className={style.imgSlide} />
-            <img src={mysqlC} className={style.imgSlide} />
-            <img src={motionC} className={style.imgSlide} />
-          </div>
-        </div> */}
         <motion.div className={style.parallax} ref={ref} style={{ scale: scaleIn }}>
           <motion.div className={style.title} style={{ y: Ttitle, x: x }}>PROJETOS</motion.div>
           <motion.img src={luaf} className={style.lua} style={{ x: L }} alt='lua' />
