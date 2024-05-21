@@ -72,7 +72,7 @@ export const Portfolio = () => {
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionRight}`}>
               <div className={`${style.leftCard} ${style.leftCardRightShow}`}>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7107801763214241792/" target='blank'>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7198713825477459969/" target='blank'>
                   <img src={webDONE} className={style.test} alt='web' />
                 </a>
               </div>

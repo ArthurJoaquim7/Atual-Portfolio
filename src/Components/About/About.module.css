@@ -45,6 +45,7 @@
     padding: 400px 0px 500px 0;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
 }
 
 .run {
