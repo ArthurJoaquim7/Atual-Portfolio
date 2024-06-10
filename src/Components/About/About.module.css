@@ -126,11 +126,6 @@
     padding: 0px 150px;
     padding-bottom: 20px;
     z-index: 9;
-    background-image: url(../Img/bot.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-image: linear-gradient(to bottom, #354256, #2e3b4b, #293440, #242d36, #1f262c); */
     text-shadow: #000000 2px 2px 2px;
     filter: drop-shadow(-0px 20px 10px  #000);
 }
@@ -176,50 +171,13 @@
     z-index: 1;
     background-image: url(../Img/paper.png);
     background-repeat: no-repeat;
-    /* background-color: #aa3910; */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
-
-/* .dInfo:hover {
-    background-image: linear-gradient(to right top, #1f2532, #1f1e29, #1c1920, #181318, #110c0f, #110c0f, #110c0f, #110c0f, #181318, #1c1920, #1f1e29, #1f2532);
-    transition: 0.3s ease-in;
-} */
 
 .dInfo2 {
     position: absolute;
     z-index: 1;
     right: 40px;
 }
-
-/* === */
-
-/* .dInfo::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 5px;
-    height: 100%;
-    background: linear-gradient(86deg, #000000 0%, #aa1010 50%, #000000 100%);
-    z-index: -1;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.dInfo:hover::before {
-    width: 100%;
-
-}
-
-.dInfo:Hover {
-    .h2 {
-        color: #fff;
-    }
-}
-
-.dInfo:hover {
-    box-shadow: none;
-} */
-
 
 
 /* ========================= */

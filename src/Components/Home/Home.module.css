@@ -400,16 +400,7 @@
         width: 32px;
     }
 
-    /* .h11 {
-        font-size: 10em;
-    }
-
-    .h22,
-    .h22Bottom {
-        font-size: 5em;
-        margin-top: 20px;
-    } */
-
+ 
     .h11 {
         font-size: 8em;
     }
@@ -495,17 +486,3 @@
         font-size: 1.5em;
     }
 }
-
-/* @media screen and (max-width: 320px) {
-    .h11 {
-        font-size: 5.2em;
-    }
-
-    .h22,
-    .h22Bottom {
-        font-size: 2.3em;
-    }
-} */
-
-
-/* =======  HEIGHT ======= */
