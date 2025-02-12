@@ -65,7 +65,7 @@ export const About = () => {
                 once: true,
               }}
               transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 200 }}
-            >Estou <span className='fff2'>a 1 ano</span> estudando e criando projetos em <span className='fff2'>FRONT-END</span> (alguns em <span className='fff2'>FullStack</span>) para poder me desenvolver profissionalmente e estar <span className='fff2'>pronto para o mercado</span></motion.p>
+            >Estou <span className='fff2'>a 2 anos</span> estudando e criando projetos em <span className='fff2'>FullStackD</span> para poder me desenvolver profissionalmente e estar <span className='fff2'>pronto para o mercado</span></motion.p>
             {/* BTN */}
             <div className={style.btnDiv}>
               <a href={ArthurCurriculum} download='ArthurCurriculum' className={style.a}>
@@ -104,7 +104,7 @@ export const About = () => {
                     once: true,
                   }}
                   transition={{ duration: 0.3, delay: 0.2, type: 'spring', stiffness: 50 }}
-                >24 anos de idade</motion.p>
+                >25 anos de idade</motion.p>
               </div>
               {/* ==== */}
               <div className={style.flex}>
@@ -165,7 +165,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 50 }}
-                >Análise e Desenvolvimento de Sistemas(3/5) UNINTER</motion.p>
+                >Análise e Desenvolvimento de Sistemas(4/5) UNINTER</motion.p>
                 {/* <img src={xp} className={style.aboutIcons} /> */}
               </div>
               <div className={style.flex}>
