@@ -13,7 +13,7 @@ import correr from '../Img/correr.png'
 import topWave from '../Img/topWave.png'
 
 
-import ArthurCurriculum from '../PtCV/ArthurCurriculum.pdf'
+import ArthurCurriculum from '../PtCV/ArthurCV.pdf'
 
 import { easeInOut, motion, AnimatePresence } from 'framer-motion'
 
@@ -65,7 +65,7 @@ export const About = () => {
                 once: true,
               }}
               transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 200 }}
-            >Estou <span className='fff2'>a 2 anos</span> estudando e criando projetos em <span className='fff2'>FullStackD</span> para poder me desenvolver profissionalmente e estar <span className='fff2'>pronto para o mercado</span></motion.p>
+            >Estou a <span className='fff2'>mais de 2 anos</span> estudando e criando projetos em <span className='fff2'>FullStack</span> para poder me desenvolver profissionalmente e estar <span className='fff2'>pronto para o mercado</span></motion.p>
             {/* BTN */}
             <div className={style.btnDiv}>
               <a href={ArthurCurriculum} download='ArthurCurriculum' className={style.a}>
