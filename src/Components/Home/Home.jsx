@@ -40,7 +40,7 @@ export const Home = () => {
         <motion.div className={style.new}
           style={{ y: yyy }}
         >
-          <h1 className={style.h11}>ARTHUR</h1>
+          <h1 className={style.h11}>ARTHUR?</h1>
           <div className={style.sliceDiv}>
             <motion.div className={style.h22}
               initial={{ opacity: 0 }}
