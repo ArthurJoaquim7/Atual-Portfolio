@@ -104,7 +104,7 @@ export const About = () => {
                     once: true,
                   }}
                   transition={{ duration: 0.3, delay: 0.2, type: 'spring', stiffness: 50 }}
-                >25 anos de idade</motion.p>
+                >26 anos de idade</motion.p>
               </div>
               {/* ==== */}
               <div className={style.flex}>

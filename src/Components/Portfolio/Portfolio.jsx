@@ -17,6 +17,10 @@ import click from '../Img/click.png'
 import clickR from '../Img/clickR.png'
 import gHub from '../Img/gHub.png'
 import luaf from '../Img/luaf.png'
+import ang from '../Img/ang.png'
+import php from '../Img/php.png'
+import lara from '../Img/lara.png'
+import airb from '../Img/airb.png'
 import { useRef } from 'react'
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 
@@ -56,6 +60,51 @@ export const Portfolio = () => {
         </motion.div>
         {/* ----CONTENT---- */}
         <div className={style.content} >
+           {/* AIRBNB */}
+           <div className={style.contentDiv}>
+            <div className={`${style.contentCard} ${style.positionMiddle}`}>
+              <div className={`${style.leftCard} ${style.leftCardMiddle}`}>
+                <a href="https://github.com/ArthurJoaquim7/airbnb_exe1" target='blank'>
+                  <img src={airb} className={style.test} alt='airbnb' />
+                </a>
+              </div>
+              <div className={`${style.rightCard} ${style.rightCardMiddle}`}>
+                <div className={`${style.projectDesc} ${style.projectDescMiddle}`}>
+                  <div className={style.h1Div}>
+                    <span className={style.clone}>CLONE DO</span>
+                    <motion.h1
+                      initial={{ color: "#58595a" }}
+                      whileInView={{ color: ["#ff385c"], transition: { duration: 0.3, delay: 0.25 } }}
+                      viewport={{
+                        once: true,
+                      }}
+                    >AIRBNB</motion.h1>
+                  </div>
+                  <p>Como clonar o site da Airbnb da melhor forma 😁 <br />Além do PHP e Typescritp, os frameworks Laravel e Angular são excelentes</p>
+                </div>
+                <div className={`${style.divIcon} ${style.divIconMiddle}`}>
+                  <div className={style.goIconDiv}>
+                    <motion.img src={click} className={`${style.goIcon} ${style.click}`} alt='click'
+                      initial={{ scale: 0.7 }}
+                      whileInView={{
+                        scale: [0.7, 1, 0.7], transition: { duration: 2, repeat: Infinity }
+                      }}
+                      viewport={{
+                        once: true,
+                      }}
+                    />
+                    <a href="https://github.com/ArthurJoaquim7/airbnb_exe1" target='blank'><img src={gHub} className={style.goIcon} alt='github' /></a>
+                  </div>
+                  <div className={style.toolsDiv}>
+                    <img src={php} className={style.tools} alt='tools' />
+                    <img src={lara} className={style.tools} alt='tools' />
+                    <img src={ang} className={style.tools} alt='tools' />
+                    <img src={mysqlC} className={style.tools} alt='tools' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* FULLSTACK CRUD */}
           <div className={style.contentDiv}>
             <div className={`${style.contentCard} ${style.positionRight}`}>

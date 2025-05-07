@@ -110,6 +110,9 @@
     font-size: 24px;
 }
 
+.clone {
+    font-size: 24px;
+}
 /* ====== CARD POSITIONS ====== */
 .leftCardMiddle {
     display: flex;
