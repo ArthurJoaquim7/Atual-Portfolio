@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 
 
 export const Contact = () => {
-    const [copy, setCopy] = useState('artdevcontato@gmail.com')
+    const [copy, setCopy] = useState('arthursantosae@hotmail.com')
     const [copied, setCopied] = useState(false)
 
     const handleCopy = () => {

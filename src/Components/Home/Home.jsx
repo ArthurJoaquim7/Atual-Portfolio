@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import style from './Home.module.css'
-import terra2 from '../Img/terra2.png'
+import terra2 from '../Img/terra2.webp'
 import fanL from '../Img/fanL.png'
 import fanR from '../Img/fanR.png'
 
@@ -47,13 +47,13 @@ export const Home = () => {
               animate={{ opacity: 1, y: -50 }}
               transition={{ delay: 0.4, duration: 0.3, type: 'spring', stiffness: 300 }}
               style={{ x: sliceR }}
-            >DEV FRONT-END</motion.div>
+            >DEV FULLSTACK</motion.div>
             <motion.div className={style.h22Bottom} aria-hidden="true"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: -50 }}
               transition={{ delay: 0.4, duration: 0.3, type: 'spring', stiffness: 300 }}
               style={{ x: sliceL }}
-            >DEV FRONT-END</motion.div>
+            >DEV FULLSTACK</motion.div>
           </div>
           <motion.div className={style.carrocel}
             initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ export const Home = () => {
                 exit={{ opacity: 0, y: 200, transition: { duration: 1, delay: 0.1 } }}
               >
                 <img src={fanL} className={style.fanL}  alt='fan'/>
-                <p className={style.full}>FUTURO FULLSTACK</p>
+                <p className={style.full}>ANIMAÇÃO RADICAL :D</p>
                 <img src={fanR} className={style.fanR}  alt='fan'/>
               </motion.div>
             )

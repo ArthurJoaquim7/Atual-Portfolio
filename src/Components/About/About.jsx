@@ -58,14 +58,23 @@ export const About = () => {
               }}
               transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
             ><span className={style.reduce}>Olá, <span className={style.color}>s</span>ou<br /></span> Arthur <span className={style.color}>Joaquim</span></motion.h1>
-            <motion.p className={style.p2}
+            <motion.p className={style.fff2}
               initial={{ opacity: 0, y: 75 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{
                 once: true,
               }}
               transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 200 }}
-            >Estou a <span className='fff2'>mais de 2 anos</span> estudando e criando projetos em <span className='fff2'>FullStack</span> para poder me desenvolver profissionalmente e estar <span className='fff2'>pronto para o mercado</span></motion.p>
+            >Desenvolvo e mantenho <span className='fff2'>aplicações web</span> em ambiente de produção, com foco em <span className='fff2'>integrações seguras</span>, APIs REST e eficiência operacional.</motion.p>
+            <motion.p className={style.fff2}
+              initial={{ opacity: 0, y: 75 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{
+                once: true,
+              }}
+              transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 200 }}
+            >No pessoal, gosto de <span className='fff2'>criar</span> websites modernos e automações diárias.</motion.p>
+            <br />
             {/* BTN */}
             <div className={style.btnDiv}>
               <a href={ArthurCurriculum} download='ArthurCurriculum' className={style.a}>
@@ -116,7 +125,7 @@ export const About = () => {
                     once: true,
                   }}
                   transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 50 }}
-                >Vitória de Santo Antão, Pernambuco - Brasil</motion.p>
+                >Recife, Pernambuco - Brasil</motion.p>
               </div>
               {/* ==== */}
               <div className={style.flex}>
@@ -145,18 +154,8 @@ export const About = () => {
                 viewport={{
                   once: true,
                 }}
-                transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 200 }}
+                transition={{ duration: 0.3, delay: 0.1, type: 'spring', stiffness: 50 }}
               >Formações</motion.p>
-              <div className={style.flex}>
-                <img src={log} className={style.aboutIcons} alt='logistic'/>
-                <motion.p
-                  initial={{ opacity: 0, x: 75 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{
-                    once: true,
-                  }} transition={{ duration: 0.3, delay: 0.2, type: 'spring', stiffness: 50 }}>
-                  Logistica - Graduação(2022) UNIVISA</motion.p>
-              </div>
               <div className={style.flex}>
                 <img src={ads} className={style.aboutIcons} alt='degree'/>
                 <motion.p
@@ -165,8 +164,17 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.3, type: 'spring', stiffness: 50 }}
-                >Análise e Desenvolvimento de Sistemas(4/5) UNINTER</motion.p>
-                {/* <img src={xp} className={style.aboutIcons} /> */}
+                >Análise e Desenvolvimento de Sistemas</motion.p>
+              </div>
+              <div className={style.flex}>
+                <img src={log} className={style.aboutIcons} alt='logistic'/>
+                <motion.p
+                  initial={{ opacity: 0, x: 75 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{
+                    once: true,
+                  }} transition={{ duration: 0.3, delay: 0.2, type: 'spring', stiffness: 50 }}>
+                  Logistica Empresarial</motion.p>
               </div>
               <div className={style.flex}>
                 <img src={eng2} className={style.aboutIcons} alt='en'/>
@@ -176,7 +184,7 @@ export const About = () => {
                   viewport={{
                     once: true,
                   }} transition={{ duration: 0.3, delay: 0.4, type: 'spring', stiffness: 50 }}
-                >Inglês intermediário-Avançado B2</motion.p>
+                >Inglês nível B2</motion.p>
               </div>
             </motion.div>
             {/* === */}
@@ -231,7 +239,7 @@ export const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{
                     once: true,
-                  }} transition={{ duration: 0.3, delay: 0.4, type: 'spring', stiffness: 50 }}
+                  }} transition={{ duration: 0.3, delay: 0.4, type: 'spring', stiffness: 200 }}
                 >CS2 para desestressar <span>(Ou não)</span></motion.p>
               </div>
               <div className={style.flex}>
@@ -243,7 +251,7 @@ export const About = () => {
                     once: true,
                   }}
                   transition={{ duration: 0.3, delay: 0.5, type: 'spring', stiffness: 50 }}
-                >Speak english at DISCORD<span className='parent'>(English Server)</span></motion.p>
+                >Speak english on the <span className='parent'>DISCORD</span></motion.p>
               </div>
             </motion.div>
           </div>

@@ -171,7 +171,7 @@
 .padding {
     width: 100%;
     height: 100vh;
-    background-image: url(../Img/backR.jpg);
+    background-image: url(../Img/backR.webp);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-image: url(../Img/back.jpg);
+    background-image: url(../Img/back.webp);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/stickL.png);
+    background-image: url(../img/stickL.webp);
     background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
